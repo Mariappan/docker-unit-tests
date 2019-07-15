@@ -1,0 +1,11 @@
+version: "2.4"
+services:
+  mine:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      TEST_CASE: TEST1
+      SECRET: $SECRET
+    volumes:
+      - ./:/artefact
